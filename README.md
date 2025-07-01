@@ -41,13 +41,3 @@ Model juga berhasil mengklasifikasikan judul baru yang belum pernah dilatih, mem
 - 💡 Menjadi langkah awal dalam pengembangan alat bantu berbasis AI untuk menghadapi **disinformasi ekonomi digital**
 
 ---
-
-## 👨‍💻 Tim Pengembang
-
-- **Muhammad Zuhdi** (muhammadzuhdi391@gmail.com)  
-- Deananda  
-- Mahmuddin  
-Program Studi Informatika  
-Universitas Sulawesi Barat
-
----
