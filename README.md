@@ -1,3 +1,4 @@
+
 # Deteksi Berita Clickbait Berbahasa Indonesia dengan IndoELECTRA
 
 Sistem klasifikasi otomatis untuk mendeteksi berita **clickbait** dalam bahasa Indonesia, menggunakan model **IndoELECTRA** yang di-fine-tune pada dataset ekonomi digital dari media daring Indonesia. Proyek ini bertujuan untuk mendukung peningkatan literasi digital konsumen dalam menghadapi banjir informasi di ekosistem ekonomi digital.
@@ -18,3 +19,83 @@ Sistem klasifikasi otomatis untuk mendeteksi berita **clickbait** dalam bahasa I
 Judul clickbait sering kali mengecoh konsumen berita daring. Dalam konteks ekonomi digital, hal ini bisa mengarah pada misinformasi yang memengaruhi keputusan finansial. Oleh karena itu, dibutuhkan sistem deteksi otomatis berbasis NLP yang mampu mengenali pola-pola provokatif atau manipulatif dalam judul berita.
 
 ---
+
+## 🗂 Struktur Proyek
+
+```
+DeteksiClickbait/
+├── data/                      # Dataset hasil scraping & pelabelan
+│   └── berita_dataset.csv
+├── models/                    # Model IndoELECTRA hasil fine-tuning
+├── train.py                  # Skrip pelatihan model
+├── predict.py                # Skrip prediksi untuk judul baru
+├── preprocessing.py          # Pra-pemrosesan dan tokenisasi data
+├── requirements.txt          # Dependensi pustaka
+└── README.md
+```
+
+---
+
+## ⚙️ Cara Menjalankan
+
+### 1. Clone Repository
+
+```bash
+git clone https://github.com/username/DeteksiClickbait.git
+cd DeteksiClickbait
+```
+
+### 2. Instalasi Dependensi
+
+```bash
+pip install -r requirements.txt
+```
+
+### 3. Latih Model
+
+```bash
+python train.py
+```
+
+### 4. Prediksi Judul Baru
+
+```bash
+python predict.py --input "Judul berita yang ingin diuji"
+```
+
+---
+
+## 📊 Evaluasi Model
+
+| Metrik     | Nilai     |
+|------------|-----------|
+| Akurasi    | 87.2%     |
+| Precision  | 86.4%     |
+| Recall     | 85.8%     |
+| F1-Score   | 85.84%    |
+
+Model juga berhasil mengklasifikasikan judul baru yang belum pernah dilatih, membuktikan kemampuan generalisasinya dalam konteks nyata.
+
+---
+
+## 🎯 Kontribusi dan Implikasi
+
+- 📌 Membantu konsumen berita daring untuk **lebih kritis dan terlindungi**
+- 🔎 Memperkuat **literasi digital dan ketahanan informasi masyarakat**
+- 💡 Menjadi langkah awal dalam pengembangan alat bantu berbasis AI untuk menghadapi **disinformasi ekonomi digital**
+
+---
+
+## 👨‍💻 Tim Pengembang
+
+- **Muhammad Zuhdi** (muhammadzuhdi391@gmail.com)  
+- Deananda  
+- Mahmuddin  
+Program Studi Informatika  
+Universitas Sulawesi Barat
+
+---
+
+## 📄 Lisensi
+
+Proyek ini dirilis di bawah lisensi **MIT** – silakan gunakan, modifikasi, dan kembangkan dengan menyertakan atribusi.
