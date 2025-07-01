@@ -20,50 +20,6 @@ Judul clickbait sering kali mengecoh konsumen berita daring. Dalam konteks ekono
 
 ---
 
-## 🗂 Struktur Proyek
-
-```
-DeteksiClickbait/
-├── data/                      # Dataset hasil scraping & pelabelan
-│   └── berita_dataset.csv
-├── models/                    # Model IndoELECTRA hasil fine-tuning
-├── train.py                  # Skrip pelatihan model
-├── predict.py                # Skrip prediksi untuk judul baru
-├── preprocessing.py          # Pra-pemrosesan dan tokenisasi data
-├── requirements.txt          # Dependensi pustaka
-└── README.md
-```
-
----
-
-## ⚙️ Cara Menjalankan
-
-### 1. Clone Repository
-
-```bash
-git clone https://github.com/username/DeteksiClickbait.git
-cd DeteksiClickbait
-```
-
-### 2. Instalasi Dependensi
-
-```bash
-pip install -r requirements.txt
-```
-
-### 3. Latih Model
-
-```bash
-python train.py
-```
-
-### 4. Prediksi Judul Baru
-
-```bash
-python predict.py --input "Judul berita yang ingin diuji"
-```
-
----
 
 ## 📊 Evaluasi Model
 
@@ -95,7 +51,3 @@ Program Studi Informatika
 Universitas Sulawesi Barat
 
 ---
-
-## 📄 Lisensi
-
-Proyek ini dirilis di bawah lisensi **MIT** – silakan gunakan, modifikasi, dan kembangkan dengan menyertakan atribusi.
